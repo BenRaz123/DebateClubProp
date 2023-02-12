@@ -1,0 +1,42 @@
+\documentclass{report}
+
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{pgf-pie}
+\usepackage{verbatim}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[R]{\textcolor{gray!80}{Debate Club Proposal}}
+\fancyfoot[CR,CL]{\textcolor{gray!80}{Page \thepage}}
+\fancyfoot[L]{\textcolor{gray!80}{Ben Raz}}
+\fancyfoot[R]{\textcolor{gray!80}{\today}}
+
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\headrule}{\hbox to\headwidth{
+\color{gray!80}\leaders\hrule height \headrulewidth\hfill}}
+\setlength{\tabcolsep}{0.6em}
+{\renewcommand{\arraystretch}{1.34}
+
+\newfontfamily\titlefont{Nexus Serif Pro}
+\setmainfont{Nexus Sans Pro}
+\setmonofont{Nexus Typewriter Pro}
+
+\title{
+    \Huge{\titlefont{\textcolor{red!80!yellow!90!blue}
+    {A Proposal} \\[0.9em]
+    To The Leadership Team \\[0.9em]
+    Concerning the Formation of a Debate Club
+    }}}
+
+\author{Ben Raz \texttt{<ben.raz2008@gmail.com>}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\pagestyle{fancy}
+Hello World
+\end{document}
