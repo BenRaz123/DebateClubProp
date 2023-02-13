@@ -6,6 +6,8 @@
 \usepackage{verbatim}
 \usepackage{fancyhdr}
 \usepackage{fontspec}
+\usepackage{titlesec}
+
 
 \fancyhead{}
 \fancyfoot{}
@@ -15,14 +17,20 @@
 \fancyfoot[R]{\textcolor{gray!80}{\today}}
 
 \renewcommand{\headrulewidth}{0.5pt}
-\renewcommand{\headrule}{\hbox to\headwidth{
+\renewcommand{\headrule}{\nointerlineskip\hbox to\headwidth{
 \color{gray!80}\leaders\hrule height \headrulewidth\hfill}}
 \setlength{\tabcolsep}{0.6em}
-{\renewcommand{\arraystretch}{1.34}
+\renewcommand{\arraystretch}{1.34}
 
-\newfontfamily\titlefont{Nexus Serif Pro}
+\newfontfamily\titlefont[Numbers={Tabular, Lining}]{Nexus Serif Pro}
 \setmainfont{Nexus Sans Pro}
 \setmonofont{Nexus Typewriter Pro}
+
+\setcounter{secnumdepth}{3}
+
+\titleformat*{\section}{\Large\titlefont}
+\titleformat*{\subsection}{\large\titlefont}
+\titleformat*{\subsubsection}{\normalsize\titlefont}
 
 \title{
     \Huge{\titlefont{\textcolor{red!80!yellow!90!blue}
@@ -38,5 +46,9 @@
 
 \maketitle
 \pagestyle{fancy}
+\section{This is a section heading}
+\subsection{This is a subsection heading}
+\subsubsection{This is a subsubsection heading}
+
 Hello World
 \end{document}
